@@ -1,0 +1,6 @@
+type: pages
+headline: Posts
+info: "{{ page.date.toDate('d.m.Y') }}"
+template: post
+empty: No post yet
+sortBy: date desc

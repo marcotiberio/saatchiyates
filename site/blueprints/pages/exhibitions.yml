@@ -1,0 +1,31 @@
+title: Exhibitions
+
+options:
+  changeStatus: true
+
+columns:
+  main:
+    width: 2/3
+    fields:
+      # files:   
+      #   type: files
+      #   label: Exhibition Cover Picture (do not use)
+      #   layout: cards
+      #   info: "{{ file.dimensions }}"
+      #   template: image
+
+      currentExhibitions:
+        label: Current Exhibition
+        type: pages
+        query: site.find('exhibitions')
+
+      pastExhibitions:
+        label: Past Exhibitions
+        type: pages
+        query: site.find('exhibitions')
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+      extends: sections/exhibition

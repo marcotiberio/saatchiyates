@@ -1,0 +1,156 @@
+[
+    {
+        "name": "composer/ca-bundle",
+        "version": "1.2.9",
+        "version_normalized": "1.2.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/ca-bundle.git",
+            "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/ca-bundle/zipball/78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
+            "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
+            "shasum": ""
+        },
+        "require": {
+            "ext-openssl": "*",
+            "ext-pcre": "*",
+            "php": "^5.3.2 || ^7.0 || ^8.0"
+        },
+        "require-dev": {
+            "phpstan/phpstan": "^0.12.55",
+            "psr/log": "^1.0",
+            "symfony/phpunit-bridge": "^4.2 || ^5",
+            "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+        },
+        "time": "2021-01-12T12:10:35+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-main": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\CaBundle\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+        "keywords": [
+            "cabundle",
+            "cacert",
+            "certificate",
+            "ssl",
+            "tls"
+        ]
+    },
+    {
+        "name": "embed/embed",
+        "version": "v3.4.15",
+        "version_normalized": "3.4.15.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/oscarotero/Embed.git",
+            "reference": "5028323230da075d6f515448fe62dfb179b9bde8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/oscarotero/Embed/zipball/5028323230da075d6f515448fe62dfb179b9bde8",
+            "reference": "5028323230da075d6f515448fe62dfb179b9bde8",
+            "shasum": ""
+        },
+        "require": {
+            "composer/ca-bundle": "^1.0",
+            "ext-curl": "*",
+            "ext-dom": "*",
+            "ext-mbstring": "*",
+            "php": "^5.6|^7.0|^8.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.0",
+            "phpunit/phpunit": "^5.7|^6.0|^7.0"
+        },
+        "time": "2021-04-02T10:59:24+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Embed\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Oscar Otero",
+                "email": "oom@oscarotero.com",
+                "homepage": "http://oscarotero.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP library to retrieve page info using oembed, opengraph, etc",
+        "homepage": "https://github.com/oscarotero/Embed",
+        "keywords": [
+            "embed",
+            "embedly",
+            "oembed",
+            "opengraph",
+            "twitter cards"
+        ]
+    },
+    {
+        "name": "getkirby/composer-installer",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/getkirby/composer-installer.git",
+            "reference": "c98ece30bfba45be7ce457e1102d1b169d922f3d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/getkirby/composer-installer/zipball/c98ece30bfba45be7ce457e1102d1b169d922f3d",
+            "reference": "c98ece30bfba45be7ce457e1102d1b169d922f3d",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0 || ^2.0"
+        },
+        "require-dev": {
+            "composer/composer": "^1.8 || ^2.0"
+        },
+        "time": "2020-12-28T12:54:39+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Kirby\\ComposerInstaller\\Plugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Kirby\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Kirby's custom Composer installer for the Kirby CMS and for Kirby plugins",
+        "homepage": "https://getkirby.com"
+    }
+]

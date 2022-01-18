@@ -1,0 +1,6 @@
+type: pages
+headline: Exhibitions
+info: "{{ page.date.toDate('d.m.Y') }}"
+template: exhibition
+empty: No exhibition yet
+sortBy: date desc

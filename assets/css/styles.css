@@ -1,0 +1,1601 @@
+@font-face {
+  font-family: "ArialBlack";
+  src: url('https://saatchiyates.com/assets/fonts/ArialBlack.woff2');
+}
+
+
+/* basic */
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: white;
+  padding: 40px 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+}
+
+main {
+  padding: 120px 40px;
+}
+
+footer {
+  padding: 40px;
+}
+
+/* .artist-single footer,
+.exhibition-single footer {
+  padding-left: calc(25vw + 40px);
+} */
+
+main.artists {
+  padding: 150px 40px 40px 40px;
+}
+
+main.private-sales,
+main.contact {
+  padding: 0px;
+}
+
+.home main.full {
+  padding: 0px;
+}
+
+.home header,
+.home .blur-mobile {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.home .blur-mobile {
+  height: 76px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  /* align-items: baseline; */
+  column-gap: 20px;
+  display: grid;
+  /* flex-flow: row wrap;
+  justify-content: space-between; */
+  grid-template-columns: 22% 3fr 1fr;
+  padding: 0 40px;
+}
+
+nav .menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 63%;
+  width: auto;
+}
+
+nav .notice {
+  min-width: 30%;
+  text-align: right;
+  width: auto;
+}
+
+nav a {
+  /* max-width: 5vw; */
+}
+
+nav a,
+nav span {
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+.t-10 {
+  margin-top: 10px;
+}
+
+.t-20 {
+  margin-top: 20px;
+}
+
+.t-40 {
+  margin-top: 40px;
+}
+
+.t-60 {
+  margin-top: 60px;
+}
+
+.t-80 {
+  margin-top: 80px;
+}
+
+.t-160 {
+  margin-top: 160px;
+}
+
+.t-315 {
+  margin-top: 315px;
+}
+
+.b-10 {
+  margin-bottom: 10px;
+}
+
+.b-20 {
+  margin-bottom: 20px;
+}
+
+.b-40 {
+  margin-bottom: 40px;
+}
+
+.r-10 {
+  margin-right: 10px;
+}
+
+.l-10 {
+  margin-left: 10px;
+}
+
+.l-20 {
+  margin-left: 20px;
+}
+
+.l-40 {
+  margin-left: 40px;
+}
+
+.align-right {
+  float: right;
+}
+
+.align-bottom {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+
+.align-bottom span+span {
+  margin-left: 40px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.selected {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000;
+}
+
+.selected:hover {
+  cursor: pointer;
+}
+
+.notice {
+  float: right;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.full {
+  width: 100%;
+  height: calc(100vh - 190px);
+}
+
+.full .row,
+.full .row .column,
+.full .row .columns {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.flex-column {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-column .item {
+  padding: 10px;
+  width: 25%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  transition: width 0.5s;
+}
+
+.flex-column .item.no-padding {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.item.c1,
+.item.w1 {
+  width: 100%;
+}
+
+.item.c2 {
+  width: 50%;
+}
+
+.item.c3 {
+  width: 33.33333333%;
+}
+
+.item.w1 {
+  width: 100%;
+}
+
+.item.c-special-1 {
+  width: 8%;
+}
+
+.item.c-special-2 {
+  width: 16%;
+}
+
+.item.c-special-3 {
+  width: 25%;
+}
+
+.item.c-special-4 {
+  width: 33%;
+}
+
+.item.c-special-5 {
+  width: 42%;
+}
+
+.item.c-special-7 {
+  width: 58%;
+}
+
+.item.c-special-8 {
+  width: 67%;
+}
+
+.flex.center {
+  align-items: center;
+}
+
+.sub-title {
+  margin-bottom: 30px;
+}
+
+.logo {
+  /* width: 350px; */
+  height: 25px;
+  transition: width 0.5s;
+}
+
+.logo .logotype {
+  color: #000;
+  font-family: 'ArialBlack', Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.home .logo .logotype {
+  color: #fff;
+}
+
+footer .logo {
+  width: 127px;
+  height: 19px;
+}
+
+.page {
+  position: relative;
+  background-color: white;
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.page.background-desktop {
+  display: block;
+}
+
+.page.background-mobile {
+  display: none;
+}
+
+.home .page {
+  background-repeat: repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background: url(../img/SY-Full-logo-w.svg) no-repeat center center;
+  background-size: 1347px;
+  background-color: #f9f8f7;
+}
+
+.footer-main {
+  margin-top: 20px;
+}
+
+.footer-main a+a {
+  margin-left: 20px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+}
+
+.footer-bottom span+span {
+  float: right;
+}
+
+footer .twelfth.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+footer .twelfth.columns .left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+
+main img {
+  width: 100%;
+}
+
+img.non-full-width {
+  width: auto;
+}
+
+.home header a,
+.home header,
+.home main {
+  color: white;
+}
+
+.home .dot {
+  background-color: #fff;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.fill-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-element {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.private-sales .video-element {
+  height: calc(100vh - 105px);
+}
+
+.block-mobile {
+  display: inline;
+}
+
+.flex-artists {
+  height: calc(100vh - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* exhibitons */
+
+.past-exhibitions .item {
+  align-items: center;
+  column-gap: 10px;
+  display: grid !important;
+  grid-template-columns: 42% 42% 16% !important;
+  row-gap: 20px;
+  width: 100%;
+}
+/* exhibitons */
+
+.exhibition-single .cat-buy {
+  padding: 10px;
+}
+
+.exhibition-single .gallery-image:hover {
+  transform: scale(2);
+}
+
+.exhibition-single .progress {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to right, black, black);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  
+  transition: background-size .4s ease-in-out;
+}
+
+.sliderContainer .slick-dots{
+  display: none !important;
+  position: relative;
+  max-width: 250px;
+  margin: 0 auto;
+}
+.sliderContainer .slick-dots li button:before{
+  color: #fff;
+  content: '•';
+  background: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 12px;
+  width: 10px;
+  height: 10px;
+}
+.slick-dots .animated-dot{
+  background-image: url("https://img.icons8.com/plasticine/100/000000/play.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 14px;
+  width: 16px;
+  }
+
+/* progress bar */
+.slider-progress {
+width: 100%;
+height: 3px;
+background: #eee;
+max-width: 768px;
+margin: 0 auto;
+}
+.slider-progress .progress {
+width: 0%;
+height: 3px;
+background: #000;
+}
+
+/* exhibiton */
+
+.exhibitions .current {
+  column-gap: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.exhibition-archive .swiper {
+  margin-top: 0;
+  padding: 0;
+}
+
+.exhibitions .current h1 {
+  padding-bottom: 20px;
+}
+
+.exhibitions span+a,
+.exhibitions span+span {
+  margin-left: 60px;
+}
+
+.exhibitions .current h2+div {
+  margin-top: 20px;
+}
+
+/* .exhibitions .current .exhibition-info .bottom {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: space-between !important;
+} */
+
+.exhibitions .past h1,
+.exhibitions .past span {
+  line-height: 70px;
+}
+
+.past-title {
+  margin: 40px 0 40px 0;
+}
+
+/* artists */
+
+.artists h2 {
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.artists a:hover,
+.exhibitions h2 a:hover {
+  font-style: italic;
+}
+
+.artists-list .link {
+  margin-bottom: 10px;
+}
+
+.item-relative {
+  position: relative;
+}
+
+.artists-list .link span,
+.artists-list-img {
+  display: none;
+}
+
+.artists-list .link span {
+  margin-left: 20px;
+}
+
+.artists-list-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.portrait-img {
+  width: auto;
+  height: 60vh;
+  top: 0;
+}
+
+/* artist-detail */
+
+.artist-detail h1 {
+  display: inline;
+}
+
+.artist-detail p {
+  max-width: 90%;
+}
+
+.bio-container-side,
+.bio-container-center,
+.bio-container,
+.qr-container
+
+/*, .cat-container*/
+  {
+  display: none;
+  margin-top: 40px;
+}
+
+.qr-container figure {
+  margin: 0;
+  width: 200px;
+}
+
+.index-btn img {
+  width: 19px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.view-index-btn img,
+.view-stack-btn img {
+  width: 19px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.view-index-btn img.active,
+.view-stack-btn img.active {
+  opacity: 1;
+}
+
+.gallery-container {
+  padding: 0 10px;
+}
+
+.artist-detail .gallery-container .profile-pic {
+  height: 200px;
+  width: auto;
+  float: right;
+}
+
+.info div:nth-child(1) {
+  margin-top: 20px;
+}
+
+.info div+div {
+  margin-top: 80px;
+}
+
+.side-divider {
+  border-right: 1px solid #dedede;
+  padding-right: 100px;
+}
+
+/* Artist Details Marco */
+
+.artist-detail .side-divider {
+  background-color: #fff;
+  border-right: 0;
+  padding: 0 10px 0 40px;
+  position: fixed;
+  left: 0;
+  height: fit-content;
+  width: 25vw;
+}
+
+.artist-detail .side-info {
+  display: none;
+  margin-top: 40px;
+}
+
+.artist-detail .side-info .profile-pic {
+  display: none;
+}
+
+.artist-detail .side-divider .info-bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.artist-detail .column-centre {
+  margin-left: calc(25vw - 20px);
+  width: 65vw;
+}
+
+.artist-detail .column-centre .bio-container {
+  width: 90%;
+}
+
+.artist-detail .gallery-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+
+.artist-detail .column-right {
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 120px;
+  width: 10vw;
+}
+
+.artist-Fox .artist-detail .info .l-40:nth-last-child(1),
+.artist-Fox .artist-detail .info .l-40:nth-last-child(2),
+.artist-Fox .artist-detail .info .l-40:nth-last-child(3),
+.artist-Fox .artist-detail .info .l-40:nth-last-child(5),
+.artist-Fox .artist-detail .info .l-40:nth-last-child(4) {
+  display: none;
+}
+
+.artist-Fox .artist-detail .side-info .info-bottom .l-20:nth-last-child(1),
+.artist-Fox .artist-detail .side-info .info-bottom .l-20:nth-last-child(2),
+.artist-Fox .artist-detail .side-info .info-bottom .l-20:nth-last-child(3) {
+  display: none;
+}
+
+/* Artist Details Marco */
+
+/* private-sales */
+
+.private-sales .video-container,
+.private-sales .private-sales-detail {
+  margin-top: 100px;
+}
+
+.private-sales img,
+.contact img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.private-sales-detail,
+.news-feature,
+.contact-detail {
+  padding: 0 16.5%;
+}
+
+.private-sales-detail div:nth-child(1) {
+  padding-top: 20px;
+}
+
+.private-sales-detail div:nth-child(1)+h4 {
+  padding-top: 10px;
+}
+
+.current-on-view {
+  padding-top: 40px;
+}
+
+.current-on-view+h4 {
+  padding-top: 10px;
+}
+
+.current-on-view+h4+div {
+  padding-top: 40px;
+}
+
+.for-all-enquiries {
+  padding-top: 80px;
+}
+
+.for-all-enquiries+div {
+  padding-top: 40px;
+}
+
+.for-all-enquiries+div a+a {
+  margin-left: 20px;
+}
+
+.columns-2-layout {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}
+
+/* news */
+
+.caption {
+  margin-top: 20px;
+}
+
+.caption span+span {
+  font-family: 'adobe-caslon-pro';
+  margin-left: 20px;
+}
+
+.artist-detail .caption {
+  font-family: 'adobe-caslon-pro';
+}
+
+.grid-960 .row {
+  margin-top: 40px;
+}
+
+.grid-960 div:nth-child(1) {
+  padding: 10px 0;
+}
+
+iframe {
+  height: 100%;
+}
+
+.more-btn {
+  text-align: center;
+}
+
+.more-btn img {
+  width: 12px;
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  margin-left: -5px;
+  display: block;
+}
+
+.news-feature div+h2 {
+  margin-top: 10px;
+}
+
+.news-feature div+h2+p {
+  margin-top: 40px;
+}
+
+/* contact */
+
+.contact-detail {
+  margin-top: 120px;
+}
+
+.contact-detail div:nth-child(1) {
+  margin-top: 20px;
+}
+
+.contact-detail div:nth-child(1)+h4 {
+  margin-top: 80px;
+}
+
+.contact-detail div:nth-child(1)+h4+div {
+  margin-top: 60px;
+}
+
+.contact-detail div:nth-child(1)+h4+div+h4 {
+  margin-top: 10px;
+}
+
+.contact-detail .columns-2-layout {
+  margin-top: 80px;
+}
+
+.stay-in-touch {
+  margin-top: 80px;
+}
+
+.stay-in-touch+div {
+  margin-top: 20px;
+}
+
+.stay-in-touch+div a+a {
+  margin-left: 20px;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Privacy Policy */
+
+.privacy-policies-detail .header {
+  margin-bottom: 20px;
+}
+
+/* Privacy Policy */
+
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+
+
+@media (max-width: 1440px) {
+
+  .logo .logotype {
+    font-size: 2.8rem;
+  }
+}
+
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 5.2rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  p,
+  body {
+    font-size: 1.3rem;
+    letter-spacing: 0.25px;
+  }
+
+  .logo .logotype {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (max-width: 1150px) {
+
+  .logo .logotype {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    width: 200px;
+    height: 17px;
+  }
+
+  nav .logo {
+    position: fixed;
+    left: 20px;
+  }
+
+  .align-bottom {
+    top: 75vh;
+    position: absolute;
+    text-align: center;
+    width: calc(100vw - 80px);
+  }
+
+  .align-bottom span {
+    display: block;
+  }
+
+  .align-bottom span+span {
+    margin-left: 0;
+  }
+
+  nav {
+	  flex-flow: column wrap;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    background-color: #fff;
+    width: calc(100vw - 40px);
+    min-height: 100vh;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+  }
+
+  header,
+  main,
+  footer {
+    padding: 40px 20px;
+  }
+
+  header.mobile {
+    background-color: white;
+    height: 76px;
+    padding: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  main {
+    top: 60px;
+    position: relative;
+  }
+
+  main.artists {
+    padding: 40px 20px;
+  }
+
+  main.artist-detail {
+    top: 40px;
+  }
+
+  main.news {
+    padding-top: 20px;
+  }
+
+  .page {
+    padding-bottom: 160px;
+  }
+
+  .page.background-desktop {
+    display: none;
+  }
+
+  .page.background-mobile {
+    display: block;
+  }
+
+  .padding-100-mobile {
+    padding-bottom: 95px;
+  }
+
+  .home .page {
+    padding-bottom: 0px;
+  }
+
+  header.mobile a,
+  header.mobile {
+    display: block;
+  }
+
+  .home header.mobile a,
+  .home header.mobile span,
+  .home header.mobile div {
+    color: #000;
+  }
+
+  .home header.mobile {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .home header.mobile .menu-btn {
+    color: white;
+  }
+
+  .home header {
+    padding: 0;
+  }
+
+  header a {
+    margin-bottom: 6vh;
+    margin-right: 0px;
+  }
+
+  header a:nth-child(2) {
+    margin-top: 10vh;
+  }
+
+  footer .logo {
+    width: 182px;
+    height: 15px;
+    position: relative;
+    left: 50%;
+    margin-left: -91px;
+  }
+
+  .footer-main {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .footer-main div {
+    margin-top: 10px;
+  }
+
+  .footer-main a+a {
+    margin-left: 30px;
+  }
+
+  .footer-bottom {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .one-half-mobile {
+    width: 48%;
+  }
+
+  footer .five {
+    margin-top: 60px;
+  }
+
+  footer .three {
+    margin-top: 60px;
+    text-align: left;
+  }
+
+  footer .three div:first-child {
+    margin-bottom: 10px;
+  }
+
+  footer input:not(.button) {
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0 !important;
+    width: calc(100vw - 115px);
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .footer-bottom span {
+    display: block;
+  }
+
+  .footer-bottom span+span {
+    float: none;
+    margin-top: 30px;
+  }
+
+  .close-btn img,
+  .menu-btn img {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  .home .menu-btn img {
+    filter: invert(1);
+  }
+
+  .close-btn,
+  .menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+
+  .mobile.logo {
+    position: fixed;
+    width: 200px;
+    top: 30px;
+    left: 20px;
+    display: block;
+  }
+
+  .notice {
+    display: none;
+  }
+
+  .notice-mobile {
+    left: 0;
+    position: fixed;
+    top: 73px;
+    width: 100vw;
+  }
+
+  .notice-mobile .dot {
+    background-color: #000;
+  }
+
+  .notice-mobile span+.dot {
+    margin-left: 20px;
+  }
+
+  .extra {
+	  bottom: 60px;
+    position: relative;
+    width: calc(100vw - 40px);
+    margin-top: 10vh;
+  }
+
+  .extra div+div {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  header.mobile nav {
+    display: none;
+  }
+
+  .mobile .logo-mobile {
+    position: absolute;
+    display: inline;
+    top: 26.5px;
+    left: 18.5px;
+    margin-bottom: 0px;
+  }
+
+  .logo-mobile {
+    color: #000;
+    font-family: 'ArialBlack', Helvetica, sans-serif;
+    font-size: 22.5px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .home .logo-mobile .logotype {
+    color: #fff;
+  }
+
+  nav .logotype {
+    position: absolute;
+    display: inline;
+    top: 24px;
+    left: 18.5px;
+    margin-bottom: 0px;
+    color: #000;
+    font-family: 'ArialBlack', Helvetica, sans-serif;
+    font-size: 22.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .home nav .logotype {
+    color: #fff;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  /* artist mobile */
+
+  .artists-list .link {
+    margin-bottom: 30px;
+  }
+
+  .artists-list .link span {
+    display: block;
+    margin-left: 0;
+  }
+
+
+  /* artist-detail mobile */
+
+  .artist-detail p {
+    max-width: 100%;
+  }
+
+  .gallery-container,
+  .flex-column .item {
+    padding: 0px;
+  }
+
+  .artist-detail .gallery-container .profile-pic {
+    height: 130px;
+    width: auto;
+    float: right;
+  }
+
+  .info div:nth-child(1) {
+    margin-top: 10px;
+  }
+
+  .info div+div {
+    margin-top: 100px;
+  }
+
+  .exhibitions .past h1,
+  .exhibitions .past span {
+    line-height: 30px;
+  }
+
+  .private-sales .flex-column {
+    flex-direction: column-reverse;
+  }
+
+  .flex-column.reverse-order {
+    flex-direction: column-reverse;
+  }
+
+  .item.c1,
+  .item.c2,
+  .item.c3 {
+    width: 100%;
+  }
+
+
+  /* private-sales mobile*/
+  .private-sales .private-sales-detail,
+  .contact-detail {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+
+  .private-sales-detail div:nth-child(1) {
+    padding-top: 0px;
+  }
+
+  .private-sales-detail div:nth-child(1)+h4 {
+    padding-top: 20px;
+  }
+
+  .current-on-view+h4 {
+    padding-top: 10px;
+  }
+
+  .current-on-view+h4+div {
+    padding-top: 20px;
+  }
+
+  .for-all-enquiries {
+    padding-top: 50px;
+  }
+
+  .for-all-enquiries+div {
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .video-element,
+  .private-sales .video-element {
+    height: auto;
+  }
+
+  .block-mobile {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* flex mobile */
+  .item.c1 {
+    width: 100%;
+  }
+
+  .item.c2 {
+    width: 100%;
+  }
+
+  .item.c3 {
+    width: 100%;
+  }
+
+  .item.c-special-1,
+  .item.c-special-2 {
+    width: 50%;
+  }
+
+  .item.c-special-3,
+  .item.c-special-4,
+  .item.c-special-5,
+  .item.c-special-7,
+  .item.c-special-8 {
+    width: 100%;
+  }
+
+  /* news mobile */
+  .news-feature {
+    padding: 0;
+  }
+
+  .news-feature div+h2+p {
+    margin-top: 20px;
+  }
+
+  .news-feature div {
+    margin-top: 20px;
+  }
+
+  .more-btn {
+    display: none;
+  }
+
+  .sub-title {
+    margin-bottom: 20px;
+  }
+
+  /* contact mobile */
+
+  .contact-detail div:nth-child(1) {
+    margin-top: 0px;
+  }
+
+  .contact-detail div:nth-child(1)+h4 {
+    margin-top: 20px;
+  }
+
+  .contact-detail div:nth-child(1)+h4+div {
+    margin-top: 30px;
+  }
+
+  .contact-detail .columns-2-layout {
+    margin-top: 60px;
+  }
+
+  .stay-in-touch {
+    margin-top: 60px;
+  }
+
+  .stay-in-touch+div {
+    margin-bottom: 50px;
+  }
+
+  .contact img {
+    height: auto;
+  }
+
+  footer {
+    background: url(../img/SY-Logo-w.svg) no-repeat center center;
+    background-size: calc(100vw - 40px);
+    background-color: #f9f8f7;
+  }
+
+  .side-divider {
+    border-right: 0px solid #000;
+  }
+
+  .contact .columns-2-layout {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+
+  .spacing-mobile {
+    margin-top: 40px;
+    display: block;
+  }
+
+  /* exhibition mobile */
+
+  .exhibitions .c-special-5 {
+    margin-top: 40px;
+  }
+
+  .exhibitions .flex-column .item {
+    margin-bottom: 10px;
+  }
+
+  /* LATEST MARCO */
+
+  .artist-archive .page,
+  .exhibition-archive .page {
+    padding-bottom: 0;
+  }
+
+  .exhibition-archive .exhibition-info .bottom {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 0;
+  }
+
+  .exhibition-archive .exhibition-info .bottom .selected {
+    margin-left: 0;
+    margin-top: 20px;
+    width: fit-content;
+  }
+
+  .exhibition-archive .past-exhibitions .item.past-title {
+    margin-bottom: 30px;
+  }
+
+  .exhibition-archive .past-exhibitions .item {
+    align-items: flex-start;
+    display: flex !important;
+    flex-flow: column wrap;
+    margin-bottom: 60px;
+    row-gap: 0;
+  }
+
+  .exhibition-archive .exhibitions span+a {
+    margin-left: 0;
+    margin-top: 20px;
+    width: fit-content;
+  }
+
+  .exhibition-archive .exhibitions span+span {
+    margin-left: 0;
+    margin-top: 10px;
+    width: fit-content;
+  }
+
+  .artist-archive .item-relative {
+    display: none;
+  }
+
+  .artist-single .side-divider,
+  .exhibition-single .side-divider {
+    height: fit-content;
+    margin-bottom: 0;
+    position: sticky;
+    top: 76px;
+    width: 100%;
+    z-index: 101;
+  }
+
+  .artist-detail .side-info {
+    display: none;
+    margin-top: 20px;
+}
+
+  .artist-detail .column-centre {
+    margin-left: 0;
+  }
+
+  .artist-detail .gallery-container .profile-pic {
+    position: fixed;
+    top: 105px;
+    right: 20px;
+    z-index: 102;
+  }
+
+  .artist-detail .gallery-container {
+    grid-template-columns: 1fr;
+    margin-top: 110px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: #fff;
+    z-index: 100;
+  }
+
+  .exhibition-single .exhibitionSwiper {
+    margin-top: 40px;
+  }
+
+  .artist-single footer,
+  .exhibition-single footer {
+    padding-left: 20px;
+  }
+
+  .exhibition-single .gallery-container .t-80 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .exhibition-single .cat-buy {
+    padding: 0;
+  }
+
+  .artist-single .side-info h2 {
+    font-size: 2.5rem;
+  }
+
+  footer .twelfth.columns .left {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  footer .twelfth.columns .left span {
+    margin-top: 0;
+  }
+
+  .contact .l-20,
+  .private-sales .l-20 {
+    margin-left: 0;
+  }
+
+  .artist-single .artist-profile {
+    background-color: #fff;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    position: fixed;
+    top: 105px;
+    height: fit-content;
+    width: calc(100% - 40px);
+  }
+
+  .exhibition-single .artist-profile {
+    background-color: #fff;
+    padding-bottom: 0;
+    padding-top: 20px;
+    position: fixed;
+    top: 105px;
+    height: fit-content;
+    width: calc(100% - 40px);
+  }
+
+  .artist-single .artist-profile .bio-container-center {
+    margin-top: 60px;
+  }
+
+  .exhibitions .current {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .exhibition-archive .swiper {
+    margin-top: 40px;
+    padding: 10px 0;
+  }
+
+  .artist-detail h1 {
+    font-size: 2.5rem;
+  }
+
+  .artist-detail .t-80 {
+    margin-top: 20px;
+  }
+
+}

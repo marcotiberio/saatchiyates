@@ -1,0 +1,2 @@
+a8fa65144630f6e0a4ff3d597e638d3a19c3ad68644652c69dcb48b7f9fbacbf
+a:7:{s:9:"startTime";i:1642370458;s:10:"expiryTime";i:1642377658;s:8:"duration";i:7200;s:7:"timeout";i:1800;s:12:"lastActivity";i:1642370458;s:9:"renewable";b:1;s:4:"data";a:1:{s:10:"kirby.csrf";s:64:"2b1ff9d98026053e7882a3af9731c6f2746877a270d51982000467ac60e91f5c";}}

@@ -1,0 +1,6 @@
+type: pages
+headline: Artists
+info: "{{ page.date.toDate('d.m.Y') }}"
+template: artist
+empty: No artist yet
+sortBy: date desc

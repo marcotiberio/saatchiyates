@@ -1,0 +1,23 @@
+title: Artists
+
+options:
+  changeStatus: false
+
+columns:
+  main:
+    width: 2/3
+    fields:
+      # files:   
+      #   type: files
+      #   label: Artists Cover Picture (do not use)
+      #   template: image
+
+      coverImage:
+        label: Cover Images
+        type: files
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+      extends: sections/artist

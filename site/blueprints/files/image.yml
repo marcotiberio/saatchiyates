@@ -1,0 +1,32 @@
+title: Image
+
+columns:
+  main:
+    width: 1/2
+    sections:
+      content:
+        type: fields
+
+        fields:
+          caption:
+            label: Caption
+            type: text
+
+          description:
+            label: Description
+            type: text
+
+  sidebar:          
+    width: 1/2
+    sections:
+      meta:
+        type: fields
+
+        fields:
+          column:
+            label: Listing View - Column
+            type: select
+            options:
+              - c1
+              - c2
+              - c3

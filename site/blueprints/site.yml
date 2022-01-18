@@ -1,0 +1,96 @@
+title: Site
+
+# The layout of this form has two columns:
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          galleryInfo:
+            label: Gallery Info
+            type: headline
+          address:
+            label: Address
+            type: textarea
+            width: 1/2
+          openingHours:
+            label: Opening Hours
+            type: textarea
+            width: 1/2
+          contact:
+            label: Contact
+            type: tel
+            width: 1/2
+          email:
+            label: Info Email
+            type: email
+            width: 1/2
+          pressEmail:
+            label: Press Email
+            type: email
+            width: 1/2
+          privateSalesEmail:
+            label: Private Sales Email
+            type: email
+            width: 1/2
+          copyright:
+            label: Copyright
+            type: text
+            width: 1/2
+          socialMedia:
+            label: Social Media
+            type: headline
+          whatsApp:
+            label: WhatsApp
+            type: text
+            width: 1/2
+          facebook:
+            label: Facebook
+            type: text
+            width: 1/2
+          instagram:
+            label: Instagram
+            type: text
+            width: 1/2          
+          linkedin:
+            label: LinkedIn
+            type: text
+            width: 1/2              
+          mobileContent:
+            label: Mobile Content + Announcement Bar
+            type: headline
+          marqueeOpeningHoursWeek:
+            label: Mobile Opening Hours Mon-Sat (Marquee + announcement bar)
+            type: text
+            width: 1/2
+          marqueeOpeningHoursWeekend:
+            label: Mobile Opening Hours Sun (Marquee + announcement bar)
+            type: text
+            width: 1/2    
+          mobileExhibition:
+            label: Mobile Exhibition Name and Time
+            type: text
+            width: 1/2          
+          mobileAddress:
+            label: Mobile Address
+            type: text
+            width: 1/2        
+          mobileOpeningHours:
+            label: Mobile Opening Hours
+            type: textarea
+            width: 2/2
+
+  - width: 1/3
+    sections:
+      Pages:
+        type: pages
+        # create: artist
+        templates:
+          - home
+          - artists
+          - exhibitions
+          - private-sales
+          - news
+          - contact
+          - privacy-policy

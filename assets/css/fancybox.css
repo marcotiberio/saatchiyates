@@ -1,0 +1,29 @@
+.fancybox__container {
+--carousel-button-svg-filter: none !important;
+}
+
+.fancybox__backdrop {
+  background: #fff !important;
+  opacity: 0.9;
+}
+
+.fancybox__toolbar {
+    background: transparent;
+    padding: 8px 35px;
+}
+
+.fancybox__toolbar__items--center {
+  display: none;
+}
+
+.carousel__button {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: #000 !important;
+    width: 20px;
+}
+
+.carousel__button:hover {
+    color: #000 !important;
+}

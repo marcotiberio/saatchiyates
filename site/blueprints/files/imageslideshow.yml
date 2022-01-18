@@ -1,0 +1,17 @@
+title: Image Slideshow
+
+columns:
+  main:
+    width: 1/2
+    sections:
+      content:
+        type: fields
+
+        fields:
+          caption:
+            label: Caption
+            type: text
+
+          description:
+            label: Description
+            type: text

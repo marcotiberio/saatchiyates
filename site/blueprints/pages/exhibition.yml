@@ -1,0 +1,121 @@
+title: Exhibition
+num: '{{ page.date.toDate("Ymd") }}'
+icon: 📷
+
+status:
+  draft:
+    label: Draft
+    text: The article is still in draft mode. It can only be seen by editors with panel access.
+  unlisted:
+    label: In Review
+    text: The article is online and can be visited with the direct URL. The team must still give the final go to publish it.
+  listed:
+    label: Published
+    text: The article is online and listed in the blog
+
+columns:
+  main:
+    width: 2/3
+
+    fields:
+
+      slideshow:
+        headline: Image Gallery
+        type: files
+      
+      gallery:
+        type: files
+        uploads: 
+          parent: site
+          template: files-upload
+
+      buyCatalogueTitle:
+        label: Buy catalogue text
+        width: 1/1
+        type: text
+        size: small
+
+      infoshopifyButtonId1:
+        label: Info Shopify Button - ID 1
+        width: 1/1
+        type: info
+        text: |
+          Please copy the code you find here:
+          "product-component-XXXXXXXXXXXXX"
+
+      shopifyButtonId1:
+        label: Shopify Button - ID 1
+        width: 1/1
+        type: text
+        size: small
+
+      infoshopifyButtonId2:
+        label: Info Shopify Button - ID 2
+        width: 1/1
+        type: info
+        text: |
+          Please copy the code you find here:
+          ui.createComponent(‘product’, {
+          id: ‘XXXXXXXXXXXXX’"
+      
+      shopifyButtonId2:
+        label: Shopify Button - ID 2
+        width: 1/1
+        type: text
+        size: small
+
+      name:
+        width: 1/3
+        label: Artist Name
+        type: text
+
+      dates:
+        width: 1/3
+        label: Exhibition Date
+        type: text
+
+      exhibitionType:
+        width: 1/3
+        label: Exhibition Type
+        type: text
+
+      exhibitionDetail:
+        label: Exhibition Detail
+        type: textarea
+        size: small
+
+      additionalDropdownLabel:
+        label: Additional Dropdown Label
+        width: 1/3
+        type: text
+        size: small
+
+      additionalDropdown:
+        label: Additional Dropdown
+        width: 2/3
+        type: textarea
+        size: small
+
+      # shopifyButtonDiv:
+      #   label: Shopify Button
+      #   width: 3/3
+      #   type: textarea
+      #   size: small
+
+      # shopifyButton:
+      #   label: Shopify Button
+      #   width: 3/3
+      #   type: textarea
+      #   size: small
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+
+      files:
+        type: files
+        headline: Image Library
+        template: image
+        uploads:
+          template: image

@@ -1,0 +1,61 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Home
+
+icon: 🏠
+
+options:
+  changeStatus: false
+
+columns:
+
+  # main
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          exhibitionNameDesktop:
+            label: Exhibition Name Desktop (leave empty to hide)
+            type: text
+          exhibitionDateDesktop:
+            label: Exhibition Date Desktop (leave empty to hide)
+            type: text
+            width: 1/2
+          exhibitonSubHeadlineDesktop:
+            label: Exhibition Tag Desktop (leave empty to hide)
+            type: text
+            width: 1/2
+          exhibitionNameMobile:
+            label: Exhibition Name Mobile (leave empty to hide)
+            type: text
+          exhibitionDateMobile:
+            label: Exhibition Date Mobile (leave empty to hide)
+            type: text
+            width: 1/2
+          exhibitonSubHeadlineMobile:
+            label: Exhibition Tag Mobile (leave empty to hide)
+            type: text
+            width: 1/2
+
+  # sidebar
+  sidebar:
+    width: 1/3
+
+    fields:
+      BackgroundImageDesktop:
+        label: Background Image Desktop
+        type: files
+      BackgroundImageMobile:
+        label: Background Image Mobile
+        type: files
+
+
+
+
+
+    # sections:
+
+    #   files:
+    #     type: files
+    #     headline: Background Image
