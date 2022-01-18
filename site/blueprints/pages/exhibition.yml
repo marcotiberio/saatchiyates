@@ -18,7 +18,6 @@ columns:
     width: 2/3
 
     fields:
-
       slideshow:
         headline: Image Gallery
         type: files
@@ -95,6 +94,18 @@ columns:
         width: 2/3
         type: textarea
         size: small
+      
+      seometa:
+        label: Meta Description
+        type: textarea
+        size: small
+        width: 1/2
+        
+      seotags:
+        label: Meta Keywords
+        type: textarea
+        size: small
+        width: 1/2
 
       # shopifyButtonDiv:
       #   label: Shopify Button

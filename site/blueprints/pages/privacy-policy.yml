@@ -19,3 +19,15 @@ columns:
           mainContent:
             label: Policies
             type: textarea
+            
+          seometa:
+            label: Meta Description
+            type: textarea
+            size: small
+            width: 1/2
+            
+          seotags:
+            label: Meta Keywords
+            type: textarea
+            size: small
+            width: 1/2

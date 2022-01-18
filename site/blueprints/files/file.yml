@@ -1,0 +1,13 @@
+title: File
+
+columns:
+  main:
+    width: 1/2
+    sections:
+      content:
+        type: fields
+
+        fields:
+          alt:
+            label: Alt Text
+            type: text

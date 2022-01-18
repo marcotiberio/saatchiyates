@@ -28,7 +28,7 @@
               $images =  $current->slideshow()->toFiles();
               foreach($images as $image): ?>
                 <div class="swiper-slide">
-                  <img src="<?= $image->url() ?>" alt="">
+                  <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
                 </div>
               <?php endforeach; ?>
               </div>

@@ -35,7 +35,7 @@
         </div> 
         <div class="item c2 no-padding">
           <?php if($file = $page->image()): ?>
-            <img src="<?= $file->url() ?>" alt="">
+            <img src="<?= $file->url() ?>" alt="<?= $file->alt() ?>">
           <?php endif ?>
         </div>
       </div>

@@ -18,24 +18,41 @@ columns:
           exhibitionNameDesktop:
             label: Exhibition Name Desktop (leave empty to hide)
             type: text
+
           exhibitionDateDesktop:
             label: Exhibition Date Desktop (leave empty to hide)
             type: text
             width: 1/2
+
           exhibitonSubHeadlineDesktop:
             label: Exhibition Tag Desktop (leave empty to hide)
             type: text
             width: 1/2
+
           exhibitionNameMobile:
             label: Exhibition Name Mobile (leave empty to hide)
             type: text
+
           exhibitionDateMobile:
             label: Exhibition Date Mobile (leave empty to hide)
             type: text
             width: 1/2
+
           exhibitonSubHeadlineMobile:
             label: Exhibition Tag Mobile (leave empty to hide)
             type: text
+            width: 1/2
+            
+          seometa:
+            label: Meta Description
+            type: textarea
+            size: small
+            width: 1/2
+            
+          seotags:
+            label: Meta Keywords
+            type: textarea
+            size: small
             width: 1/2
 
   # sidebar

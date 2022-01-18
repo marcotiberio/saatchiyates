@@ -64,7 +64,7 @@
             foreach($imageGallery as $imageGallery): ?>
               <div class="item <?= $imageGallery->Column() ?> w1">
                 <a href="<?= $imageGallery->resize(null, null, 60)->url() ?>" data-fancybox="gallery" data-src="<?= $imageGallery->resize(null, null, 60)->url() ?>">
-                  <img src="<?= $imageGallery->resize(null, null, 60)->url() ?>">
+                  <img src="<?= $imageGallery->resize(null, null, 60)->url() ?>" alt="<?= $imageGallery->alt() ?>">
                   <div class="caption">
                     <div><?= $imageGallery->caption() ?></div>
                     <div><?= $imageGallery->description() ?></div>

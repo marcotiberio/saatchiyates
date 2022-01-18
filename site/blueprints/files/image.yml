@@ -16,6 +16,10 @@ columns:
             label: Description
             type: text
 
+          alt:
+            label: Alt Text
+            type: text
+
   sidebar:          
     width: 1/2
     sections:

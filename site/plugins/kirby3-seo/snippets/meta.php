@@ -12,12 +12,4 @@
 <?= Html::tag('meta', null, ["property" => "og:description", "content" => $metadesc]).PHP_EOL ?>
 <?= Html::tag('meta', null, ["property" => "og:locale", "content" => $metafblocale]).PHP_EOL ?>
 
-<?= Html::tag('meta', null, ["name" => "twitter:title", "content" => $metatitle]).PHP_EOL ?>
-<?= Html::tag('meta', null, ["name" => "twitter:card", "content" => $metatwcard]).PHP_EOL ?>
-<?= Html::tag('meta', null, ["name" => "twitter:site", "content" => $metatwsite]).PHP_EOL ?>
-<?= Html::tag('meta', null, ["name" => "twitter:creator", "content" => $metatwcreator]).PHP_EOL ?>
-<?= Html::tag('meta', null, ["name" => "twitter:image", "content" => $metaimage ]).PHP_EOL ?>
-<?= Html::tag('meta', null, ["name" => "twitter:url", "content" => $metaurl]).PHP_EOL ?>
-<?= Html::tag('meta', null, ["name" => "twitter:description", "content" => $metadesc]).PHP_EOL ?>
-
 <?= Html::tag('meta', null, ["name" => "robots", "content" => $metarobots]).PHP_EOL ?>

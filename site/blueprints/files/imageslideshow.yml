@@ -15,3 +15,7 @@ columns:
           description:
             label: Description
             type: text
+
+          alt:
+            label: Alt Text
+            type: text
