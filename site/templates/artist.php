@@ -19,9 +19,12 @@
                 <div><?= $page->bios()->text() ?></div>
                 <div class="info-bottom">
                   <a id="bio-btnSide" class="bio-btn selected" href="#">Biography</a>
-                  <?php foreach ($page->files()->filterBy('template', 'cv') as $cv): ?>
+                  <!-- <?php foreach ($page->documents()->filterBy('template', 'cv') as $cv): ?>
                   <a class="selected l-20 cv" target="_blank" href="<?= $cv->url() ?>">Download CV</a>
-                  <?php endforeach ?>
+                  <?php endforeach ?> -->
+                  <?php if($file = $page->file()): ?>
+                    <a class="selected l-20 cv" target="_blank" href="<?= $file->url() ?>">Download CV</a>
+                  <?php endif ?>
                   <a id="qr-btnSide" class="selected l-20" href="#"><?= $page->additionalDropdownLabel()->kirbytextinline() ?></a>
                 </div>
               </div>
@@ -40,10 +43,10 @@
                 <div><?= $page->bios()->text() ?></div>
                 <div class="t-80">
                   <a id="bio-btnCenter" class="selected" href="#">Biography</a>
-                  <?php foreach ($page->files()->filterBy('template', 'cv') as $cv): ?>
-                  <a class="selected l-40 cv" target="_blank" href="<?= $cv->url() ?>">Download CV</a>
+                  <?php if($file = $page->file()): ?>
+                    <a class="selected l-20 cv" target="_blank" href="<?= $file->url() ?>">Download CV</a>
+                  <?php endif ?>
                   <a id="qr-btn" class="selected l-40" href="#"><?= $page->additionalDropdownLabel()->kirbytextinline() ?></a>
-                  <?php endforeach ?>
                   </div>
               </div>
               <div class="bio-container-center">

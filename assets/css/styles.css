@@ -678,6 +678,14 @@ background: #000;
   width: 100%;
 }
 
+/* .artist-detail .gallery-container .cv:first-child{
+  display: block;
+}
+
+.artist-detail .gallery-container .cv:not(:first-child){
+  display: none;
+} */
+
 .artist-detail .column-right {
   position: fixed;
   right: 0;
@@ -686,7 +694,7 @@ background: #000;
   width: 10vw;
 }
 
-.artist-Fox .artist-detail .info .l-40:nth-last-child(1),
+/* .artist-Fox .artist-detail .info .l-40:nth-last-child(1),
 .artist-Fox .artist-detail .info .l-40:nth-last-child(2),
 .artist-Fox .artist-detail .info .l-40:nth-last-child(3),
 .artist-Fox .artist-detail .info .l-40:nth-last-child(5),
@@ -698,7 +706,7 @@ background: #000;
 .artist-Fox .artist-detail .side-info .info-bottom .l-20:nth-last-child(2),
 .artist-Fox .artist-detail .side-info .info-bottom .l-20:nth-last-child(3) {
   display: none;
-}
+} */
 
 /* Artist Details Marco */
 
